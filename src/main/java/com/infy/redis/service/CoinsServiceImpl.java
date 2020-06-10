@@ -13,8 +13,8 @@ public class CoinsServiceImpl implements CoinsService {
     CoinsDao userDao;
 
 
-    public Boolean saveCoins(Coins user){
-        return userDao.saveCoins(user) ;
+    public Boolean saveCoins(Coins coins){
+        return userDao.saveCoins(coins) ;
     }
 
     @Override
