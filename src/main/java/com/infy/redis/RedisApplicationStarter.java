@@ -7,10 +7,10 @@ import org.springframework.data.redis.repository.configuration.EnableRedisReposi
 
 @SpringBootApplication
 @EnableRedisRepositories
-public class AuthorizationApplication {
+public class RedisApplicationStarter {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AuthorizationApplication.class, args);
+		SpringApplication.run(RedisApplicationStarter.class, args);
 
 
 	}

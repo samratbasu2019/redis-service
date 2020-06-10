@@ -1,8 +1,8 @@
 package com.infy.redis.controller;
 
 
-import com.infy.redis.dal.User;
-import com.infy.redis.service.AuthorizationService;
+import com.infy.redis.dal.Coins;
+import com.infy.redis.service.CoinsService;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,23 +14,23 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class UserController {
+public class CoinsController {
 
 
     @Autowired
-    AuthorizationService authorizationService;
+    CoinsService coinsService;
 
 
-    @RequestMapping(value = "/addUser", method = RequestMethod.POST)
-    public ResponseEntity<String> addUser(@RequestBody User User) {
+    @RequestMapping(value = "/addCoins", method = RequestMethod.POST)
+    public ResponseEntity<String> addCoins(@RequestBody Coins coins) {
 
         ModelMapper modelMapper = new ModelMapper();
-        User user = modelMapper.map(User, User.class);
+        Coins coin = modelMapper.map(coins, Coins.class);
 
 
-        Boolean result = authorizationService.saveUser(user);
+        Boolean result = coinsService.saveCoins(coin);
         if (result) {
-            return ResponseEntity.ok("A new user is saved!!!");
+            return ResponseEntity.ok("Coins are saved!!!");
         } else {
             return ResponseEntity.ok("An error occured!!!");
         }
@@ -38,13 +38,13 @@ public class UserController {
     }
 
 
-    @RequestMapping(value = "/findUser", method = RequestMethod.POST)
-    public ResponseEntity<User> findUser(@RequestBody User User) {
+    @RequestMapping(value = "/findCoins", method = RequestMethod.POST)
+    public ResponseEntity<Coins> findUser(@RequestBody Coins coins) {
 
         ModelMapper modelMapper = new ModelMapper();
-        User user = modelMapper.map(User, User.class);
+        Coins user = modelMapper.map(coins, Coins.class);
 
-        User result = authorizationService.findByName(user.getName());
+        Coins result = coinsService.findByKey(user.getKey());
 
         return ResponseEntity.ok(result);
 
