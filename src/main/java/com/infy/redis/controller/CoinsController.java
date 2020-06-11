@@ -4,6 +4,8 @@ package com.infy.redis.controller;
 import com.infy.redis.dal.Coins;
 import com.infy.redis.service.CoinsService;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class CoinsController {
-
+	protected final Log logger = LogFactory.getLog(this.getClass());
 
     @Autowired
     CoinsService coinsService;
@@ -27,7 +29,7 @@ public class CoinsController {
         ModelMapper modelMapper = new ModelMapper();
         Coins coin = modelMapper.map(coins, Coins.class);
 
-
+        logger.info("Coins are getting saved");
         Boolean result = coinsService.saveCoins(coin);
         if (result) {
             return ResponseEntity.ok("Coins are saved!!!");
@@ -42,9 +44,9 @@ public class CoinsController {
     public ResponseEntity<Coins> findUser(@RequestBody Coins coins) {
 
         ModelMapper modelMapper = new ModelMapper();
-        Coins user = modelMapper.map(coins, Coins.class);
-
-        Coins result = coinsService.findByKey(user.getKey());
+        Coins coin = modelMapper.map(coins, Coins.class);
+        logger.info("Coins are getting fetched for this key : "+coin.getKey());
+        Coins result = coinsService.findByKey(coin.getKey());
 
         return ResponseEntity.ok(result);
 
