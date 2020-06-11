@@ -16,5 +16,6 @@ public class Coins implements Serializable{
     private String key;
     private Deals deals;
     private Default defaults;
-    private Long resetToDefaultDate;
+    private Long dealStartDate;
+    private Long dealEndDate;
 }

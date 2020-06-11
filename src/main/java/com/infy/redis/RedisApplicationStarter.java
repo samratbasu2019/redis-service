@@ -11,13 +11,7 @@ public class RedisApplicationStarter {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RedisApplicationStarter.class, args);
-
-
 	}
-
-
-
-
 
 }
 
