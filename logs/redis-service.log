@@ -1,0 +1,27 @@
+2020-06-20 15:41:37.728  INFO 59912 --- [main] com.infy.redis.RedisApplicationStarter   : Starting RedisApplicationStarter on BLRKEC287992L with PID 59912 (started by samrat.basu01 in D:\samrat.basu01\D-Drive\eclipse workspace\redis-service-new)
+2020-06-20 15:41:37.747  INFO 59912 --- [main] com.infy.redis.RedisApplicationStarter   : No active profile set, falling back to default profiles: default
+2020-06-20 15:41:43.183  INFO 59912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-20 15:41:43.185  INFO 59912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-20 15:41:44.499  INFO 59912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 697ms. Found 1 repository interfaces.
+2020-06-20 15:41:44.525  INFO 59912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-20 15:41:44.526  INFO 59912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-20 15:41:44.547  INFO 59912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 1 repository interfaces.
+2020-06-20 15:41:50.717  INFO 59912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9021 (http)
+2020-06-20 15:41:50.930  INFO 59912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-20 15:41:50.932  INFO 59912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-06-20 15:41:50.951  INFO 59912 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\bin\compressedrefs;C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\bin;C:\windows\system32;C:\windows;D:/openjdk-11.0.1_windows-x64_bin/jdk-11.0.1/bin/server;D:/openjdk-11.0.1_windows-x64_bin/jdk-11.0.1/bin;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\bin;C:\Program Files\PuTTY\;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\Redis;C:\Program Files\TortoiseGit\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Users\samrat.basu01\AppData\Local\Microsoft\WindowsApps;;C:\Users\samrat.basu01\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\samrat.basu01\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.1\bin;;C:\Users\samrat.basu01\Desktop;;.]
+2020-06-20 15:41:51.405  INFO 59912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-20 15:41:51.406  INFO 59912 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 13129 ms
+2020-06-20 15:41:56.536  INFO 59912 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 15:41:57.366  INFO 59912 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-06-20 15:41:57.474  INFO 59912 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-06-20 15:41:57.488  INFO 59912 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-06-20 15:41:58.046  INFO 59912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9021 (http) with context path ''
+2020-06-20 15:41:58.050  INFO 59912 --- [main] com.infy.redis.RedisApplicationStarter   : Started RedisApplicationStarter in 23.729 seconds (JVM running for 26.06)
+2020-06-20 15:42:31.455  INFO 59912 --- [http-nio-9021-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-20 15:42:31.456  INFO 59912 --- [http-nio-9021-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-20 15:42:31.466  INFO 59912 --- [http-nio-9021-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-06-20 15:42:31.848  INFO 59912 --- [http-nio-9021-exec-1] c.infy.redis.controller.CoinsController  : Coins are getting saved
+2020-06-20 15:42:32.222  INFO 59912 --- [http-nio-9021-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-06-20 15:42:32.229  INFO 59912 --- [http-nio-9021-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-06-20 15:46:33.269  INFO 59912 --- [http-nio-9021-exec-3] c.infy.redis.controller.CoinsController  : Coins are getting fetched for this key : coins
